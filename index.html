@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Empresa BPO Financeiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#E0F2FE',
+                        'secondary-blue': '#BFDBFE',
+                        'dark-blue': '#1E3A8A',
+                        'accent-blue': '#60A5FA',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #60A5FA;
+            animation: spin 1s ease infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Cabeçalho / Barra de Navegação -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm py-4">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 lg:px-8">
+            <!-- Título da empresa substituindo a logo -->
+            <a href="#home" class="text-xl md:text-2xl font-extrabold text-dark-blue">
+                Evo - Revolucione seu Setor Financeiro
+            </a>
+            <div class="mt-4 sm:mt-0 flex flex-wrap justify-center gap-4 sm:gap-8 text-lg font-medium">
+                <a href="#services" class="text-gray-600 hover:text-accent-blue transition-colors">Serviços</a>
+                <a href="#gemini-feature" class="text-gray-600 hover:text-accent-blue transition-colors">Benefícios</a>
+                <a href="#contact" class="text-gray-600 hover:text-accent-blue transition-colors">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de destaque (Hero Section) -->
+    <section id="home" class="bg-primary-blue py-20 md:py-32 flex items-center justify-center">
+        <div class="container mx-auto px-6 lg:px-8 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-dark-blue leading-tight mb-4">
+                Simplifique Sua Gestão Financeira
+            </h1>
+            <p class="text-xl md:text-2xl text-dark-blue/80 mb-8">
+                Oferecemos soluções completas de BPO Financeiro para que você possa focar no que realmente importa: o crescimento do seu negócio.
+            </p>
+            <a href="#contact" class="inline-block px-8 py-4 bg-accent-blue text-white text-lg font-bold rounded-full shadow-lg hover:bg-dark-blue transform hover:scale-105 transition-all duration-300 ease-in-out">
+                Solicite um Orçamento
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-dark-blue mb-12">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Cartão de Serviço 1: Contas a Pagar e Receber -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 14V8m-3 3h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Gestão de Contas</h3>
+                    <p class="text-gray-700 text-center">
+                        Cuidamos de todas as suas contas a pagar e a receber, garantindo pagamentos pontuais e um fluxo de caixa saudável.
+                    </p>
+                </div>
+                
+                <!-- Cartão de Serviço 2: Conciliação Bancária -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12s-4-4-7-4s-7 4-7 4s-4 4-7 4m14-8v-2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V12h-2a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Conciliação Bancária</h3>
+                    <p class="text-gray-700 text-center">
+                        Comparações precisas entre o extrato bancário e seus registros financeiros, garantindo a exatidão das suas informações.
+                    </p>
+                </div>
+
+                <!-- Cartão de Serviço 3: Relatórios Financeiros -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20V10M18 20V4M6 20V16m-2 4h16"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Relatórios Financeiros</h3>
+                    <p class="text-gray-700 text-center">
+                        Elaboração de relatórios detalhados para uma visão clara da saúde financeira da sua empresa.
+                    </p>
+                </div>
+
+                <!-- Cartão de Serviço 4: Emissão de Notas Fiscais -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6m-3 7H9m0 4h6m-3-11v0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Emissão de NF-e</h3>
+                    <p class="text-gray-700 text-center">
+                        Garantimos a emissão de notas fiscais de forma rápida e segura, em conformidade com a legislação.
+                    </p>
+                </div>
+                
+                <!-- Cartão de Serviço 5: Planejamento Orçamentário -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 5a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 6a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm4-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 6a2 2 0 1 1-2 2a2 2 0 0 1 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Planejamento Financeiro</h3>
+                    <p class="text-gray-700 text-center">
+                        Ajuda na criação e acompanhamento do seu orçamento, identificando oportunidades de crescimento e economia.
+                    </p>
+                </div>
+
+                <!-- Cartão de Serviço 6: Fluxo de Caixa -->
+                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5L12 2 4 5v7c0 6 8 10 8 10z"/>
+                            <path d="M12 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm0 4v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Análise de Fluxo de Caixa</h3>
+                    <p class="text-gray-700 text-center">
+                        Análise e projeção detalhada do fluxo de caixa para decisões financeiras mais assertivas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova seção com a funcionalidade da API Gemini -->
+    <section id="gemini-feature" class="py-20 md:py-32 bg-primary-blue">
+        <div class="container mx-auto px-6 lg:px-8 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-5xl font-bold text-dark-blue mb-4">
+                Descubra Como Podemos Ajudar ✨
+            </h2>
+            <p class="text-lg md:text-xl text-dark-blue/80 mb-8">
+                Descreva um desafio financeiro da sua empresa e veja como o BPO Financeiro pode ser a solução ideal.
+            </p>
+            <div class="max-w-xl mx-auto space-y-4">
+                <textarea id="business-description" rows="4" class="w-full p-4 rounded-xl border-2 border-gray-300 focus:border-accent-blue focus:ring focus:ring-accent-blue focus:ring-opacity-50 resize-none placeholder-gray-500" placeholder="Ex: 'Sou dono de uma pequena loja de varejo e perco muito tempo com a conciliação bancária.'"></textarea>
+                <button id="generate-btn" class="px-8 py-4 w-full bg-accent-blue text-white text-lg font-bold rounded-full shadow-lg hover:bg-dark-blue transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    Gerar Benefícios ✨
+                </button>
+            </div>
+            
+            <!-- Contêiner para a resposta da IA e o spinner de carregamento -->
+            <div id="response-container" class="mt-8 p-6 bg-white rounded-2xl shadow-xl hidden">
+                <div id="loading-spinner" class="flex justify-center items-center h-32 hidden">
+                    <div class="spinner"></div>
+                </div>
+                <div id="response-content" class="text-left text-gray-700 leading-relaxed whitespace-pre-wrap"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-dark-blue mb-12">Fale Conosco</h2>
+            <p class="text-center text-lg text-gray-700 mb-8">
+                Para um atendimento mais rápido e personalizado, entre em contato através dos nossos canais.
+            </p>
+            <div class="max-w-lg mx-auto flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Botão do WhatsApp -->
+                <a href="https://wa.me/5549991262782" target="_blank" class="flex-1 text-center py-4 bg-[#25D366] text-white text-lg font-bold rounded-full shadow-lg hover:bg-green-700 transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    WhatsApp
+                </a>
+                
+                <!-- Botão do Instagram -->
+                <a href="https://instagram.com/evoconsultbr" target="_blank" class="flex-1 text-center py-4 bg-[#C13584] text-white text-lg font-bold rounded-full shadow-lg hover:bg-[#833AB4] transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark-blue text-white py-8">
+        <div class="container mx-auto px-6 lg:px-8 text-center">
+            <p>&copy; Evo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para a funcionalidade da API Gemini -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateBtn = document.getElementById('generate-btn');
+            const businessDescriptionTextarea = document.getElementById('business-description');
+            const responseContainer = document.getElementById('response-container');
+            const loadingSpinner = document.getElementById('loading-spinner');
+            const responseContent = document.getElementById('response-content');
+            
+            // Variáveis de controle para o spinner
+            let spinnerTimeout;
+            
+            // Função para exibir o spinner
+            const showSpinner = () => {
+                responseContainer.classList.remove('hidden');
+                loadingSpinner.classList.remove('hidden');
+                responseContent.textContent = '';
+                // Garante que o spinner seja visível por pelo menos 500ms
+                spinnerTimeout = setTimeout(() => {
+                    loadingSpinner.classList.add('hidden');
+                }, 500);
+            };
+
+            // Função para esconder o spinner
+            const hideSpinner = () => {
+                clearTimeout(spinnerTimeout);
+                loadingSpinner.classList.add('hidden');
+            };
+
+            // Função para chamar a API e gerar o texto
+            const generateText = async (prompt) => {
+                let retries = 0;
+                const maxRetries = 5;
+                const baseDelay = 1000; // 1 segundo
+                
+                while (retries < maxRetries) {
+                    try {
+                        const payload = {
+                            contents: [{
+                                parts: [{ text: prompt }]
+                            }],
+                            generationConfig: {
+                                responseMimeType: "text/plain"
+                            }
+                        };
+                        const apiKey = "";
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                        
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`Erro na API: ${response.status} - ${response.statusText}`);
+                        }
+
+                        const result = await response.json();
+                        const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                        if (text) {
+                            return text;
+                        } else {
+                            throw new Error('A resposta da API está vazia ou não tem a estrutura esperada.');
+                        }
+                    } catch (error) {
+                        console.error('Erro na chamada da API:', error);
+                        retries++;
+                        const delay = baseDelay * Math.pow(2, retries - 1); // Atraso exponencial
+                        if (retries < maxRetries) {
+                            await new Promise(res => setTimeout(res, delay));
+                        } else {
+                            console.error('Número máximo de tentativas alcançado. Falha ao gerar resposta.');
+                            throw error;
+                        }
+                    }
+                }
+            };
+
+            // Lidar com o clique do botão
+            generateBtn.addEventListener('click', async () => {
+                const businessDescription = businessDescriptionTextarea.value.trim();
+                
+                if (businessDescription === "") {
+                    // Se o campo estiver vazio, não faz nada
+                    responseContainer.classList.add('hidden');
+                    return;
+                }
+                
+                showSpinner();
+                
+                const prompt = `Você é um consultor de BPO Financeiro. Explique de forma concisa (máximo de 150 palavras) os benefícios de terceirizar os serviços financeiros para uma empresa com a seguinte descrição: "${businessDescription}". Use uma linguagem profissional e clara, focada em resolver o problema do cliente.`;
+                
+                try {
+                    const generatedText = await generateText(prompt);
+                    responseContent.textContent = generatedText;
+                    hideSpinner();
+                } catch (error) {
+                    responseContent.textContent = 'Desculpe, não foi possível gerar uma resposta. Por favor, tente novamente mais tarde.';
+                    hideSpinner();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
