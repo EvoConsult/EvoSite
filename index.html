@@ -1,182 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo - BPO Financeiro</title>
+    <title>Evo Consult Ltda - Contabilidade e Finanças</title>
+
+    <!-- Libs CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        'primary-blue': '#E0F2FE',
-                        'secondary-blue': '#BFDBFE',
-                        'dark-blue': '#1E3A8A',
-                        'accent-blue': '#60A5FA',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .scroll-smooth {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-<body class="bg-gray-50 font-sans text-gray-800">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Cabeçalho / Barra de Navegação -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm py-4">
-        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 lg:px-8">
-            <!-- Título da empresa substituindo a logo -->
-            <a href="#home" class="text-xl md:text-2xl font-extrabold text-dark-blue">
-                Evo - Revolucione seu Setor Financeiro
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Evo Consult new.png" alt="Evo Consult Logo" class="logo">
             </a>
-            <div class="mt-4 sm:mt-0 flex flex-wrap justify-center gap-4 sm:gap-8 text-lg font-medium">
-                <a href="#services" class="text-gray-600 hover:text-accent-blue transition-colors">Serviços</a>
-                <a href="#contact" class="text-gray-600 hover:text-accent-blue transition-colors">Contato</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Inteligência Financeira para o Futuro do seu Negócio.</h1>
+                    <p>Combinamos expertise contábil e tecnologia para entregar a clareza e o controle que sua empresa precisa para crescer com segurança.</p>
+                    <a href="#contact" class="btn btn-primary">Fale com um Especialista</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Seção de destaque (Hero Section) -->
-    <section id="home" class="bg-primary-blue py-20 md:py-32 flex items-center justify-center">
-        <div class="container mx-auto px-6 lg:px-8 text-center max-w-4xl">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-dark-blue leading-tight mb-4">
-                Simplifique Sua Gestão Financeira
-            </h1>
-            <p class="text-xl md:text-2xl text-dark-blue/80 mb-8">
-                Oferecemos soluções completas de BPO Financeiro para que você possa focar no que realmente importa: o crescimento do seu negócio.
-            </p>
-            <a href="#contact" class="inline-block px-8 py-4 bg-accent-blue text-white text-lg font-bold rounded-full shadow-lg hover:bg-dark-blue transform hover:scale-105 transition-all duration-300 ease-in-out">
-                Solicite um Orçamento
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Soluções Completas para sua Empresa</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="icon"><i class="bi bi-briefcase"></i></div>
+                        <h4>BPO Contábil</h4>
+                        <p>Mais que conformidade. Usamos seus dados contábeis para gerar insights que impulsionam decisões inteligentes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="icon"><i class="bi bi-cash-coin"></i></div>
+                        <h4>BPO Financeiro</h4>
+                        <p>Delegue suas rotinas financeiras e ganhe tempo para focar no core business da sua empresa com total visibilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop" class="img-fluid" alt="Especialista da Evo Consult analisando gráficos">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Seu Parceiro para o Crescimento</h2>
+                    <p>A Evo Consult não é apenas uma fornecedora. Somos uma extensão da sua equipe, dedicados a entender seus desafios e a construir soluções financeiras sob medida. Nossa abordagem é proativa, digital e focada em resultados.</p>
+                    <p>Com um time de especialistas e as melhores ferramentas do mercado, garantimos que sua gestão financeira e contábil seja um diferencial competitivo, e não uma preocupação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container text-center">
+            <h2 class="section-title text-light">Vamos Conversar?</h2>
+            <p class="lead text-light mb-4">Descubra como a Evo Consult pode transformar a gestão financeira do seu negócio.</p>
+            <a href="https://wa.me/5549991262782" class="btn btn-accent" target="_blank">
+                <i class="bi bi-whatsapp"></i> Iniciar Conversa no WhatsApp
             </a>
         </div>
     </section>
 
-    <!-- Seção de Serviços -->
-    <section id="services" class="py-20 md:py-32 bg-white">
-        <div class="container mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl md:text-5xl font-bold text-center text-dark-blue mb-12">Nossos Serviços</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Cartão de Serviço 1: Contas a Pagar e Receber -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 14V8m-3 3h6"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Gestão de Contas</h3>
-                    <p class="text-gray-700 text-center">
-                        Cuidamos de todas as suas contas a pagar e a receber, garantindo pagamentos pontuais e um fluxo de caixa saudável.
-                    </p>
-                </div>
-                
-                <!-- Cartão de Serviço 2: Conciliação Bancária -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12s-4-4-7-4s-7 4-7 4s-4 4-7 4m14-8v-2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V12h-2a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Conciliação Bancária</h3>
-                    <p class="text-gray-700 text-center">
-                        Comparações precisas entre o extrato bancário e seus registros financeiros, garantindo a exatidão das suas informações.
-                    </p>
-                </div>
-
-                <!-- Cartão de Serviço 3: Relatórios Financeiros -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 20V10M18 20V4M6 20V16m-2 4h16"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Relatórios Financeiros</h3>
-                    <p class="text-gray-700 text-center">
-                        Elaboração de relatórios detalhados para uma visão clara da saúde financeira da sua empresa.
-                    </p>
-                </div>
-
-                <!-- Cartão de Serviço 4: Emissão de Notas Fiscais -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <path d="M14 2v6h6m-3 7H9m0 4h6m-3-11v0"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Emissão de NF-e</h3>
-                    <p class="text-gray-700 text-center">
-                        Garantimos a emissão de notas fiscais de forma rápida e segura, em conformidade com a legislação.
-                    </p>
-                </div>
-                
-                <!-- Cartão de Serviço 5: Planejamento Orçamentário -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 5a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 6a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm4-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2zm0 6a2 2 0 1 1-2 2a2 2 0 0 1 2-2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Planejamento Financeiro</h3>
-                    <p class="text-gray-700 text-center">
-                        Ajuda na criação e acompanhamento do seu orçamento, identificando oportunidades de crescimento e economia.
-                    </p>
-                </div>
-
-                <!-- Cartão de Serviço 6: Fluxo de Caixa -->
-                <div class="bg-secondary-blue p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5L12 2 4 5v7c0 6 8 10 8 10z"/>
-                            <path d="M12 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm0 4v4"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-center text-dark-blue mb-4">Análise de Fluxo de Caixa</h3>
-                    <p class="text-gray-700 text-center">
-                        Análise e projeção detalhada do fluxo de caixa para decisões financeiras mais assertivas.
-                    </p>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
             </div>
-        </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contact" class="py-20 md:py-32 bg-white">
-        <div class="container mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl md:text-5xl font-bold text-center text-dark-blue mb-12">Fale Conosco</h2>
-            <p class="text-center text-lg text-gray-700 mb-8">
-                Para um atendimento mais rápido e personalizado, entre em contato através dos nossos canais.
-            </p>
-            <div class="max-w-lg mx-auto flex flex-col sm:flex-row justify-center gap-6">
-                <!-- Botão do WhatsApp -->
-                <a href="https://wa.me/5549991262782" target="_blank" class="flex-1 text-center py-4 bg-[#25D366] text-white text-lg font-bold rounded-full shadow-lg hover:bg-green-700 transform hover:scale-105 transition-all duration-300 ease-in-out">
-                    WhatsApp
-                </a>
-                
-                <!-- Botão do Instagram -->
-                <a href="https://instagram.com/evoconsultbr" target="_blank" class="flex-1 text-center py-4 bg-[#C13584] text-white text-lg font-bold rounded-full shadow-lg hover:bg-[#833AB4] transform hover:scale-105 transition-all duration-300 ease-in-out">
-                    Instagram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="bg-dark-blue text-white py-8">
-        <div class="container mx-auto px-6 lg:px-8 text-center">
-            <p>&copy; Evo. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Evo Consult Ltda. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Vendor JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
