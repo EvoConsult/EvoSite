@@ -1,218 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo - Serviços Financeiros</title>
+    <title>Evo Consult | Terceirização para Contadores</title>
     <link rel="icon" href="icon.ico" type="image/x-icon">
-
-    <!-- Libs CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+    <div id="stars-container"></div>
 
-    <div class="cursor"></div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="Evo Consult new.png" alt="Evo Consult Logo" class="logo">
+    <header>
+        <nav class="glass-nav">
+            <a href="/" class="logo">
+                <img src="Evo Consult new.png" alt="Evo Consult Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <canvas id="hero-canvas"></canvas>
-        <div class="container hero-content">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1>Inteligência Financeira para o Futuro do seu Negócio.</h1>
-                    <p>Combinamos expertise contábil e tecnologia para entregar a clareza e o controle que sua empresa precisa para crescer com segurança.</p>
-                    <a href="#contact" class="btn btn-primary">Fale com um Especialista</a>
-                </div>
-            </div>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#services">Soluções</a></li>
+                <li><a href="#benefits">Vantagens</a></li>
+                <li><a href="#contact" class="cta-button">Fale Conosco</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title text-center">Soluções Completas para sua Empresa</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 text-center">
-                    <div class="service-card">
-                        <div class="icon"><i class="bi bi-person-badge"></i></div>
-                        <h4>Serviços para Mei <span class="promo-badge">PROMO R$50/mês</span></h4>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill"></i> Acompanhamento Mensal de Pendências</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Envio Das Mei Via Whatsapp</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Declaração Anual do Mei</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Emissão de Notas Fiscais</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Baixa de Mei</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Alteração de Mei</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Consultoria sobre Atividades do Mei</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/5549991262782?text=Gostaria%20de%20contratar%20os%20servi%C3%A7os%20para%20MEI" class="btn btn-primary mt-3" target="_blank">Quero Contratar</a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="service-card">
-                        <div class="icon"><i class="bi bi-cash-coin"></i></div>
-                        <h4>BPO Financeiro</h4>
-                        <ul class="list-unstyled text-start">
-                            <li><i class="bi bi-check-circle-fill"></i> Conciliação Bancária</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Emissão de Notas Fiscais</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Dashboard Mensal</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Gestão de Contas a Pagar e Receber</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Inclusão de Pagamentos bancários</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Demonstração de Resultado do Exercício (DRE)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Demonstração de Fluxo de Caixa (DFC)</li>
-                        </ul>
-                    </div>
-                    <a href="#plans" class="btn btn-primary mt-3">Conheça os Planos</a>
-                </div>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>O Parceiro Estratégico do Seu <span class="gradient-text">Negócio</span></h1>
+                <p>Potencialize a operação da sua empresa com um braço direito financeiro e contábil pautado em
+                    agilidade e precisão técnica.</p>
+                <a href="#contact" class="hero-cta">Expanda Sua Capacidade</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop" class="img-fluid" alt="Especialista da Evo Consult analisando gráficos">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-title">Seu Parceiro para o Crescimento</h2>
-                    <p>A Evo Consult não é apenas uma fornecedora. Somos uma extensão da sua equipe, dedicados a entender seus desafios e a construir soluções financeiras sob medida. Nossa abordagem é proativa, digital e focada em resultados.</p>
-                    <p>Com um time de especialistas e as melhores ferramentas do mercado, garantimos que sua gestão financeira e contábil seja um diferencial competitivo, e não uma preocupação.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="services">
+            <h2 class="section-title">Quem é você?</h2>
 
-    <!-- Pricing Section -->
-    <section id="plans" class="section">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Reduza custos com o setor financeiro. Terceirize.</h2>
-                <p class="lead mb-5">Planos flexíveis que se adaptam ao tamanho da sua empresa.</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <!-- Start Plan -->
-                <div class="col-lg-2-4 col-md-6">
-                    <div class="pricing-card h-100">
-                        <div class="pricing-header">
-                            <h3>Start</h3>
-                            <p>Faturamento até 81 mil/ano</p>
-                        </div>
-                        <div class="price"><sup>R$</sup>150<span>/mês</span></div>
-                        <a href="https://wa.me/5549991262782?text=Vi%20o%20Plano%20Start%20no%20Site%20e%20Gostaria%20de%20Contratar" class="btn btn-pricing mt-auto" target="_blank">Quero Esse</a>
-                    </div>
+            <!-- Segmentation Tabs -->
+            <div class="segment-selector">
+                <div class="segment-card active" data-target="contadores">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Escritório Contábil</h3>
                 </div>
-                <!-- Smart Plan -->
-                <div class="col-lg-2-4 col-md-6">
-                    <div class="pricing-card h-100">
-                        <div class="pricing-header">
-                            <h3>Smart</h3>
-                            <p>Faturamento até 180 mil/ano</p>
-                        </div>
-                        <div class="price"><sup>R$</sup>600<span>/mês</span></div>
-                        <a href="https://wa.me/5549991262782?text=Vi%20o%20Plano%20Smart%20no%20Site%20e%20Gostaria%20de%20Contratar" class="btn btn-pricing mt-auto" target="_blank">Quero Esse</a>
-                    </div>
+                <div class="segment-card" data-target="empresas">
+                    <i class="fas fa-building"></i>
+                    <h3>Empresa</h3>
                 </div>
-                <!-- Essential Plan -->
-                <div class="col-lg-2-4 col-md-6">
-                    <div class="pricing-card popular h-100">
-                        <div class="popular-badge">Mais Popular</div>
-                        <div class="pricing-header">
-                            <h3>Essential</h3>
-                            <p>Faturamento até 360 mil/ano</p>
-                        </div>
-                        <div class="price"><sup>R$</sup>1200<span>/mês</span></div>
-                        <a href="https://wa.me/5549991262782?text=Vi%20o%20Plano%20Essential%20no%20Site%20e%20Gostaria%20de%20Contratar" class="btn btn-pricing mt-auto" target="_blank">Quero Esse</a>
-                    </div>
-                </div>
-                <!-- Plus Plan -->
-                <div class="col-lg-2-4 col-md-6">
-                    <div class="pricing-card h-100">
-                        <div class="pricing-header">
-                            <h3>Plus</h3>
-                            <p>Faturamento até 720 mil/ano</p>
-                        </div>
-                        <div class="price"><sup>R$</sup>2000<span>/mês</span></div>
-                        <a href="https://wa.me/5549991262782?text=Vi%20o%20Plano%20Plus%20no%20Site%20e%20Gostaria%20de%20Contratar" class="btn btn-pricing mt-auto" target="_blank">Quero Esse</a>
-                    </div>
-                </div>
-                <!-- Enterprise Plan -->
-                <div class="col-lg-2-4 col-md-6">
-                    <div class="pricing-card h-100">
-                        <div class="pricing-header">
-                            <h3>Enterprise</h3>
-                            <p>Faturamento > 720 mil/ano</p>
-                        </div>
-                        <div class="price price-text">A Consultar</div>
-                        <a href="https://wa.me/5549991262782?text=Vi%20o%20Plano%20Enterprise%20no%20Site%20e%20Gostaria%20de%20Contratar" class="btn btn-pricing mt-auto" target="_blank">Quero Esse</a>
-                    </div>
+                <div class="segment-card" data-target="pf-mei">
+                    <i class="fas fa-user"></i>
+                    <h3>Pessoa Física / MEI</h3>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container text-center">
-            <h2 class="section-title text-light">Vamos Conversar?</h2>
-            <p class="lead text-light mb-4">Descubra como a Evo Consult pode transformar a gestão financeira do seu negócio.</p>
-            <a href="https://wa.me/5549991262782" class="btn btn-accent" target="_blank">
-                <i class="bi bi-whatsapp"></i> Iniciar Conversa no WhatsApp
-            </a>
-        </div>
-    </section>
+            <!-- Content Container -->
+            <div id="services-content">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="social-icons mb-4">
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <!-- ACCOUNTING FIRMS (Default Active) -->
+                <div class="service-block" id="contadores">
+                    <h3 class="block-title">Terceirização Estratégica para Contadores</h3>
+                    <p class="block-desc">Focamos exclusivamente na operação contábil (Conciliação e Encerramento),
+                        permitindo que você foque no relacionamento e crescimento. Não realizamos Fiscal ou Folha.</p>
+                    <div class="cards-container">
+                        <div class="card glass-card">
+                            <i class="fas fa-check-double card-icon"></i>
+                            <h3>Conciliações</h3>
+                            <p>Conferência minuciosa de extratos e lançamentos bancários.</p>
+                        </div>
+                        <div class="card glass-card">
+                            <i class="fas fa-file-invoice card-icon"></i>
+                            <h3>Encerramentos</h3>
+                            <p>Fechamento de balanços e balancetes com rigor técnico.</p>
+                        </div>
+                        <div class="card glass-card">
+                            <i class="fas fa-chart-pie card-icon"></i>
+                            <h3>Demonstrativos</h3>
+                            <p>Geração de DRE, DMPL e relatórios gerenciais prontos para seus clientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPANIES -->
+                <div class="service-block hidden" id="empresas">
+                    <h3 class="block-title">Soluções Completas para o Seu Negócio</h3>
+                    <div class="cards-container">
+                        <div class="card glass-card">
+                            <i class="fas fa-calculator card-icon"></i>
+                            <h3>Contabilidade Completa</h3>
+                            <p>Realizada pela parceira <strong>Grifa Contabilidade</strong>. Gestão fiscal, trabalhista
+                                e contábil integrada.</p>
+                        </div>
+                        <div class="card glass-card">
+                            <i class="fas fa-money-bill-wave card-icon"></i>
+                            <h3>BPO Financeiro</h3>
+                            <p>Realizado pela <strong>Evo Consult</strong>. Gestão de contas a pagar/receber e fluxo de
+                                caixa.</p>
+                        </div>
+                        <!-- BUNDLE -->
+                        <div class="card glass-card highlight-border bundle-card">
+                            <div class="discount-badge">10% OFF</div>
+                            <i class="fas fa-gem card-icon"></i>
+                            <h3>Pacote Gestão Total</h3>
+                            <p><strong>Contabilidade (Grifa) + BPO (Evo)</strong></p>
+                            <p class="bundle-desc">Contrate ambos e ganhe 10% de desconto no BPO Financeiro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PF / MEI -->
+                <div class="service-block hidden" id="pf-mei">
+                    <h3 class="block-title">Simplicidade para Você e seu MEI</h3>
+                    <div class="cards-container">
+                        <div class="card glass-card">
+                            <i class="fas fa-store card-icon"></i>
+                            <h3>Gestão MEI</h3>
+                            <p>Envio de guias DAS via WhatsApp, suporte e regularização de pendências.</p>
+                        </div>
+                        <div class="card glass-card">
+                            <i class="fas fa-file-contract card-icon"></i>
+                            <h3>Obrigações Anuais</h3>
+                            <p>Declaração Anual (DASN) e acompanhamento de faturamento.</p>
+                        </div>
+                        <div class="card glass-card">
+                            <i class="fas fa-user-shield card-icon"></i>
+                            <h3>Imposto de Renda</h3>
+                            <p>Declaração de IRPF para pessoas físicas com segurança e análise de caixa.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <p>&copy; 2025 Evo Consult Ltda. Todos os direitos reservados.</p>
-            <p>CNPJ: 61.206.285/0001-06</p>
-            <p>Contato: <a href="mailto:administrativo@evoconsult.com.br">administrativo@evoconsult.com.br</a></p>
-        </div>
+        </section>
+
+        <section id="benefits">
+            <!-- Benefits: Contadores -->
+            <div class="benefits-content benefits-block" id="benefits-contadores">
+                <h2 class="section-title">Por que terceirizar com a Evo?</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> <span>Aumente sua carteira sem aumentar custos fixos</span>
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <span>Equipe invisível: atuamos como braço do seu
+                            escritório</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Elimine gargalos operacionais em períodos de
+                            pico</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Tecnologia e processos validados</span></li>
+                </ul>
+            </div>
+
+            <!-- Benefits: Empresas -->
+            <div class="benefits-content benefits-block hidden" id="benefits-empresas">
+                <h2 class="section-title">Por que escolher a Gestão Integrada?</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> <span>Visão 360º do seu negócio (Financeiro +
+                            Contábil)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Redução de falhas de comunicação entre setores</span>
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <span>Economia real com o Pacote Gestão Total</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Decisões baseadas em dados reais</span></li>
+                </ul>
+            </div>
+
+            <!-- Benefits: PF/MEI -->
+            <div class="benefits-content benefits-block hidden" id="benefits-pf-mei">
+                <h2 class="section-title">Vantagens para Você</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> <span>Atendimento rápido via WhatsApp</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Nunca mais perca o prazo do DAS</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span>Regularize seu CPF e CNPJ sem dor de cabeça</span>
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <span>Preço justo e sem surpresas</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="glass-form-container">
+                <h2 class="section-title">Fale com um Especialista</h2>
+                <div class="contact-cta">
+                    <p>Entre em contato diretamente pelo WhatsApp para um atendimento personalizado.</p>
+                    <a href="https://wa.me/5549991262782" target="_blank" class="whatsapp-btn-contact">
+                        <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 61.206.285/0001/06 Evo Consult.</p>
     </footer>
 
-    <!-- Vendor JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <a href="https://wa.me/5549991262782" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
