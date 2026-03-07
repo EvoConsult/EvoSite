@@ -635,13 +635,32 @@ footer {
     .glass-nav {
         flex-direction: column;
         gap: 15px;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        height: 35px; /* Smaller logo on mobile */
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         gap: 15px;
         width: 100%;
+        flex-wrap: wrap; /* in case links don't fit in one line */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Smaller text on mobile menu */
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
     }
 
     .hero-content h1 {
